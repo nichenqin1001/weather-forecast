@@ -6,7 +6,6 @@ const Skycons = require('skycons')(window);
 const skycons = new Skycons({ "color": "orange" });
 skycons.play();
 
-
 const Currently = ({ currently, daily, city, isFahrenhite, toggleTempType, convertTempType }) => {
   return (
     <div className="currently">

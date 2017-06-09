@@ -137,25 +137,33 @@ body {
   }
 }
 
-.loader {
+.loader-overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  >div {
-    display: inline-block;
-    background-color: orange;
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-    margin: 2px;
-    animation-fill-mode: both;
-    animation-name: loaderAnimation;
-    animation-duration: 0.5s;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
-    &:nth-child(2n-1) {
-      animation-delay: 0.35s !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -60%);
+    >div {
+      display: inline-block;
+      background-color: orange;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      margin: 2px;
+      animation-fill-mode: both;
+      animation-name: loaderAnimation;
+      animation-duration: 0.5s;
+      animation-delay: 0;
+      animation-iteration-count: infinite;
+      &:nth-child(2n-1) {
+        animation-delay: 0.35s !important;
+      }
     }
   }
 }
