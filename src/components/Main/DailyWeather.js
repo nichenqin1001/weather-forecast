@@ -5,9 +5,9 @@ const Skycons = require('skycons')(window);
 const skycons = new Skycons({ "color": "orange" });
 skycons.play();
 
-const DailyWeather = ({ dailyWeather, convertTempType }) => {
+const DailyWeather = ({ dailyWeather, convertTempType, onSelectDailyWeather }) => {
   return (
-    <div className="daily__weather">
+    <div onClick={() => onSelectDailyWeather(dailyWeather)} className="daily__weather">
       <div className="daily__weather-time">{moment.unix(dailyWeather.time).format('dddd')}</div>
       <canvas width="48" height="48" ref={el => skycons.add(el, dailyWeather.icon)}></canvas>
       <div className="daily__weather-temp">
