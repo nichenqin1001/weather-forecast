@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import Loader from '../Loader';
+import Error from '../Error';
 import Currently from './Currently';
 import Hourly from './Hourly';
 import Daily from './Daily';
 
 class Main extends Component {
   render() {
-    const { data, toggleTempType, convertTempType, isFahrenhite, city, isLoading } = this.props;
+    const { data, toggleTempType, convertTempType, isFahrenhite, city, isLoading, error } = this.props;
 
-    if (!data || isLoading) return <div className="main"><Loader /></div>;
+    if (!data && isLoading) return <div className="main"><Loader /></div>;
+
+    if (!data && error) return <div className="main"><Error error={error} /></div>;
 
     const { currently, daily, hourly } = data;
 

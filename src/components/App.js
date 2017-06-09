@@ -31,7 +31,7 @@ class App extends Component {
     axios.get(url)
       .then(({ data }) => this.setState({ data }))
       .then(() => this.setState({ isLoading: false }))
-      .catch(error => this.setState({ error, isLoading: false }));
+      .catch(error => this.setState({ error: error.message, isLoading: false }));
   }
 
   getIpInfomation() {
