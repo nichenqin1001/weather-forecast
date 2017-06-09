@@ -12,7 +12,7 @@ class App extends Component {
 
     this.state = { data: null, city: '', latlng: { lat: 31, lng: 122 }, error: '', isFahrenhite: false, isLoading: true };
 
-    this.proxy = 'https://cors-anywhere.herokuapp.com/';
+    this.proxy = 'https://crossorigin.me/';
     this.root_url = 'https://api.darksky.net/forecast';
 
     this.ipinfo = 'https://ipinfo.io';
