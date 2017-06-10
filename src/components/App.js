@@ -17,7 +17,7 @@ class App extends Component {
       error: '',
       isFahrenhite: false,
       isLoading: true,
-      selectedDailyWeather: {}
+      selectedDailyWeather: null
     };
 
     this.proxy = 'https://crossorigin.me/';
@@ -68,7 +68,12 @@ class App extends Component {
   }
 
   onSelectDailyWeather(selectedDailyWeather) {
-    this.setState({ selectedDailyWeather });
+    this.setState({
+      selectedDailyWeather:
+      !this.state.selectedDailyWeather || this.state.selectedDailyWeather.time !== selectedDailyWeather.time
+        ? selectedDailyWeather
+        : null
+    });
   }
 
   componentDidMount() {
