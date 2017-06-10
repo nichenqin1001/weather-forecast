@@ -48,7 +48,10 @@ class App extends Component {
         this.setState({ isLoading: false });
         NProgress.done();
       })
-      .catch(error => this.setState({ error: error.message, isLoading: false }));
+      .catch(error => {
+        this.setState({ error: error.message, isLoading: false });
+        NProgress.done();
+      });
   }
 
   getIpInfomation() {

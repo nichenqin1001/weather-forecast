@@ -242,15 +242,15 @@ body {
   border-radius: 3px;
 }
 
-#nprogress .bar {
-  background: orange;
-}
-
-#nprogress .peg {
-  box-shadow: 0 0 10px orange, 0 0 5px orange;
-}
-
-#nprogress .spinner-icon {
-  border-top-color: orange;
-  border-left-color: orange;
+#nprogress {
+  .bar {
+    background: orange;
+  }
+  .peg {
+    box-shadow: 0 0 10px orange, 0 0 5px orange;
+  }
+  .sspinner-icon {
+    border-top-color: orange;
+    border-left-color: orange;
+  }
 }
