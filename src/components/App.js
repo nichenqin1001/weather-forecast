@@ -3,6 +3,7 @@ import axios from 'axios';
 import SearchBox from './SearchBox';
 import Main from './Main/Main';
 import Map from './Map/Map';
+import NProgress from 'nprogress';
 
 const DARKSKY_KEY = config.DARKSKY_KEY;
 
@@ -34,12 +35,19 @@ class App extends Component {
   }
 
   getWeatherData(latlng) {
+    NProgress.start();
     const { lat, lng } = latlng;
     const url = `${this.proxy}${this.root_url}/${DARKSKY_KEY}/${lat},${lng}?lang=zh`;
     this.setState({ isLoading: true });
     axios.get(url)
-      .then(({ data }) => this.setState({ data }))
-      .then(() => this.setState({ isLoading: false }))
+      .then(({ data }) => {
+        this.setState({ data });
+        NProgress.set(0.5);
+      })
+      .then(() => {
+        this.setState({ isLoading: false });
+        NProgress.done();
+      })
       .catch(error => this.setState({ error: error.message, isLoading: false }));
   }
 
