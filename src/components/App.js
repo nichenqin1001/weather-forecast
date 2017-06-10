@@ -56,7 +56,7 @@ class App extends Component {
   }
 
   onSearch(city, latlng) {
-    this.setState({ city, latlng });
+    this.setState({ city, latlng, selectedDailyWeather: null });
   }
 
   toggleTempType(isFahrenhite) {

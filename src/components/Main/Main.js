@@ -30,8 +30,8 @@ class Main extends Component {
           <Currently convertTempType={convertTempType} daily={daily} toggleTempType={toggleTempType} isFahrenhite={isFahrenhite} city={city} currently={currently} />
           <Hourly convertTempType={convertTempType} hourly={hourly} />
           <h3>未来7天天气</h3>
-          <Daily onSelectDailyWeather={onSelectDailyWeather} convertTempType={convertTempType} daily={daily} />
-          <DailyWeatherDetail selectedDailyWeather={selectedDailyWeather} />
+          <Daily selectedDailyWeather={selectedDailyWeather} onSelectDailyWeather={onSelectDailyWeather} convertTempType={convertTempType} daily={daily} />
+          <DailyWeatherDetail selectedDailyWeather={selectedDailyWeather} convertTempType={convertTempType} />
         </div>
       </div>
     );
