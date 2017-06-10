@@ -1,8 +1,8 @@
 import React from 'react';
 
-const DailyWeatherDetail = () => {
+const DailyWeatherDetail = ({ dailyWeatherDetail }) => {
   return (
-    <div>
+    <div className="daily-detail">
 
     </div>
   );

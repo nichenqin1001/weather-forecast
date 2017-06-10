@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import classnames from 'classnames';
+// components
 import Loader from '../Loader';
 import Error from '../Error';
 import Currently from './Currently';
@@ -21,7 +23,7 @@ class Main extends Component {
     const { currently, daily, hourly } = data;
 
     return (
-      <div className="main">
+      <div className={classnames("main", { "show": !!data })}>
         <div className="wrapper">
           {isLoading && <Loader />}
           <Currently convertTempType={convertTempType} daily={daily} toggleTempType={toggleTempType} isFahrenhite={isFahrenhite} city={city} currently={currently} />
