@@ -4,6 +4,7 @@ import SearchBox from './SearchBox';
 import Main from './Main/Main';
 import Map from './Map/Map';
 import Loadbar from 'loadbar';
+import Footer from './Footer';
 
 const loadbar = new Loadbar();
 
@@ -104,6 +105,7 @@ class App extends Component {
         <SearchBox onSearch={this.onSearch} getWeatherData={this.getWeatherData} />
         <Main {...this.state} onSelectDailyWeather={this.onSelectDailyWeather} toggleTempType={this.toggleTempType} convertTempType={this.convertTempType} />
         <Map latlng={this.state.latlng} />
+        <Footer />
       </div>
     );
   }

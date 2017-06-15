@@ -3,6 +3,7 @@
 ## library
 
 - [react](https://facebook.github.io/react/)
+- [react-sparklines](https://github.com/borisyankov/react-sparklines)
 - [place.js](https://github.com/algolia/places)
 
 ## API

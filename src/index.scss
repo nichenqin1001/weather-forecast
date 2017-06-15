@@ -10,7 +10,18 @@ body {
 }
 
 body {
+  font-family: 'Spectral', 'Microsoft Yahei', serif;
+  color: #333;
   background-color: #fcfcfc;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 2px dotted #333;
+  color: #333;
+  &:hover {
+    border-bottom-style: solid
+  }
 }
 
 .clearfix {
@@ -133,7 +144,7 @@ body {
         display: inline-block;
       }
       &__max {
-        color: #000;
+        color: #333;
         margin-right: 5px;
       }
     }
@@ -242,15 +253,6 @@ body {
   border-radius: 3px;
 }
 
-#nprogress {
-  .bar {
-    background: orange;
-  }
-  .peg {
-    box-shadow: 0 0 10px orange, 0 0 5px orange;
-  }
-  .sspinner-icon {
-    border-top-color: orange;
-    border-left-color: orange;
-  }
+.footer {
+  padding: 20px 0;
 }
