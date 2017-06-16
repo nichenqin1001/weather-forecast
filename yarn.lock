@@ -2391,9 +2391,9 @@ load-script@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/load-script/-/load-script-1.0.0.tgz#0491939e0bee5643ee494a7e3da3d2bac70c6ca4"
 
-loadbar@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/loadbar/-/loadbar-0.1.4.tgz#4f74e10e0a4c959a638f3223789b9af4917dc8d9"
+loadbar@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.npmjs.org/loadbar/-/loadbar-0.2.2.tgz#a93341019abc7f544a16373223dfcfe506ce5930"
 
 loader-runner@^2.3.0:
   version "2.3.0"

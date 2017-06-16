@@ -13,7 +13,7 @@
     "babel-polyfill": "^6.23.0",
     "classnames": "^2.2.5",
     "google-map-react": "^0.24.0",
-    "loadbar": "^0.1.4",
+    "loadbar": "^0.2.2",
     "moment": "^2.18.1",
     "places.js": "^1.4.14",
     "prop-types": "^15.5.10",

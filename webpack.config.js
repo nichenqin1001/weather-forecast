@@ -39,7 +39,7 @@ module.exports = {
   resolve: {
     extensions: ['.json', '.js', '.jsx', '.css']
   },
-  devtool: 'eval',
+  devtool: 'source-map',
   plugins: [
     new HtmlWebpackPlugin({ template: 'index.html' })
   ]

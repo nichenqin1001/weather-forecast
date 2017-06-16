@@ -6,7 +6,10 @@ import Map from './Map/Map';
 import Loadbar from 'loadbar';
 import Footer from './Footer';
 
-const loadbar = new Loadbar();
+const loadbar = new Loadbar({
+  backgroundColor: 'orange',
+  margin: '0 auto'
+});
 
 const DARKSKY_KEY = config.DARKSKY_KEY;
 
