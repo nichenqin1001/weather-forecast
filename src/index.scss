@@ -12,7 +12,7 @@ body {
 body {
   font-family: 'Spectral', 'Microsoft Yahei', serif;
   color: #333;
-  background-color: #fcfcfc;
+  background-color: #243347;
 }
 
 a {
@@ -39,6 +39,7 @@ a {
 }
 
 .header {
+  color: #fff;
   font-size: 40px;
   text-align: center;
   margin-bottom: 20px;
@@ -254,5 +255,10 @@ a {
 }
 
 .footer {
+  color: #fff;
   padding: 20px 0;
+  a {
+    color: inherit;
+    border-color: inherit;
+  }
 }
